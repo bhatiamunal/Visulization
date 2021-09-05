@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+
+  <% /* Place any styles in the page in this section. */ %>
+  <%- /* style */ %>
+</head>
+<body>
+  <header>
+    <% /*
+    Define an required placeholder for the header.
+    If a page doesn't define a header, there will be an error when rendering.
+    */ %>
+    <%- /* header */ %>
+  </header>
+
+  <%- body %>
+
+  <footer>
+    <% /*
+    Define an optional placeholder for the footer.
+    If a page doesn't define a footer, this section will simply be empty.
+    */ %>
+    <%- /*
+    defineContent('footer') 
+    */
+    %>
+  </footer>
+
+  <% /* Place any scripts contained in views at the end of the page. */ %>
+  <%- /*script */ %>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Visulization </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard">Database</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/table">Tables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/charts">Charts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard">Dashboard</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+  
+<!-- <nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+     
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/table">Tables</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/charts">Charts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="dashboard">Dashboard</a>
+    </li>
+  </ul>
+</nav> -->
+<br>
+
+<div class="container-fluid">
+  <%- body %>
+</div>
+
+</body>
+</html>
